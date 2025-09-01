@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on Nebulika</title>
+    <link>http://localhost:1313/tags/security/</link>
+    <description>Recent content in Security on Nebulika</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure AD Security Best Practices for Modern Organizations</title>
+      <link>http://localhost:1313/posts/azure-ad-security-best-practices/</link>
+      <pubDate>Tue, 26 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/azure-ad-security-best-practices/</guid>
+      <description>Essential security practices to protect your organization&amp;rsquo;s identity infrastructure</description>
+    </item>
+    <item>
+      <title>Implementing Effective Conditional Access Policies</title>
+      <link>http://localhost:1313/posts/conditional-access-policies/</link>
+      <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/conditional-access-policies/</guid>
+      <description>Design and implement conditional access policies to protect your organization&amp;rsquo;s resources</description>
+    </item>
+    <item>
+      <title>Configuring Intune Compliance Policies for Enterprise Security</title>
+      <link>http://localhost:1313/posts/intune-compliance-policies/</link>
+      <pubDate>Thu, 21 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/intune-compliance-policies/</guid>
+      <description>How to set up and manage compliance policies in Microsoft Intune</description>
+    </item>
+    <item>
+      <title>Endpoint Security Monitoring with Microsoft Defender</title>
+      <link>http://localhost:1313/posts/endpoint-security-monitoring/</link>
+      <pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/endpoint-security-monitoring/</guid>
+      <description>Implementing comprehensive endpoint security monitoring and response</description>
+    </item>
+  </channel>
+</rss>

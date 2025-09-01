@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automation on Nebulika</title>
+    <link>http://localhost:1313/tags/automation/</link>
+    <description>Recent content in Automation on Nebulika</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced O365 Administration Techniques</title>
+      <link>http://localhost:1313/posts/second-post/</link>
+      <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/second-post/</guid>
+      <description>&lt;p&gt;This post focuses on some more advanced administrative tasks within Office 365. We will look at leveraging PowerShell scripts to automate user provisioning and license management, saving you valuable time.&lt;/p&gt;&#xA;&lt;p&gt;PowerShell provides an incredible amount of control over your O365 environment, allowing for bulk operations and detailed reporting that aren&amp;rsquo;t available through the standard graphical interface.&lt;/p&gt;&#xA;&lt;p&gt;This is a great follow-up to my previous post, where I discussed &lt;a href=&#34;http://localhost:1313/posts/first-post/&#34;&gt;Getting Started with Intune&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PowerShell Automation Basics for IT Professionals</title>
+      <link>http://localhost:1313/posts/powershell-automation-basics/</link>
+      <pubDate>Wed, 27 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/powershell-automation-basics/</guid>
+      <description>Learn the fundamentals of PowerShell automation to streamline your IT operations</description>
+    </item>
+    <item>
+      <title>Advanced PowerShell Scripting Techniques</title>
+      <link>http://localhost:1313/posts/powershell-scripting-advanced/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/powershell-scripting-advanced/</guid>
+      <description>Take your PowerShell skills to the next level with advanced scripting techniques</description>
+    </item>
+  </channel>
+</rss>

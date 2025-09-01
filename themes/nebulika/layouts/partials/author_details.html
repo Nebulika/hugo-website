@@ -1,0 +1,20 @@
+<div class="author-details">
+    {{ with .Site.Params.profile_picture }}
+        {{ $image := resources.Get . }}
+        {{ if $image }}
+            {{ $resized := $image.Resize "160x160" }}
+            <img src="{{ $resized.RelPermalink }}" alt="{{ $.Site.Params.author }}" loading="lazy">
+        {{ else }}
+            <img src="{{ . | relURL }}" alt="{{ $.Site.Params.author }}">
+        {{ end }}
+    {{ end }}
+    <h3>{{ .Site.Params.author }}</h3>
+    <p>{{ .Site.Params.description }}</p>
+    {{ if .Site.Params.social }}
+        <div class="social-links">
+            {{ range .Site.Params.social }}
+                <a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
+            {{ end }}
+        </div>
+    {{ end }}
+</div>
