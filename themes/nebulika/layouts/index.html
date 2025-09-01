@@ -16,15 +16,7 @@
     <div class="post-list">
         {{ $other_posts := after 1 $pages }}
         {{ range $other_posts }}
-            <article class="post-item">
-                <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
-                <div class="post-meta">
-                    <span>{{ .Date.Format "January 2, 2006" }}</span>
-                </div>
-                <div class="post-summary">
-                    {{ .Summary }}
-                </div>
-            </article>
+            {{ partial "post_list_item.html" (dict "context" . "showDate" true "showTags" false) }}
         {{ end }}
     </div>
 {{ end }}

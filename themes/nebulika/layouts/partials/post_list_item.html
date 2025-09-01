@@ -1,0 +1,22 @@
+<article class="post-item">
+    <a href="{{ .context.Permalink }}"><h3>{{ .context.Title }}</h3></a>
+    <div class="post-meta">
+        {{ if .showDate }}
+            <time datetime="{{ .context.Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                {{ .context.Date.Format "January 2, 2006" }}
+            </time>
+        {{ end }}
+        {{ if .showTags }}
+            {{ if .context.Params.tags }}
+                <div class="post-tags">
+                    {{ range .context.Params.tags }}
+                        <a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="post-tag">{{ . }}</a>
+                    {{ end }}
+                </div>
+            {{ end }}
+        {{ end }}
+    </div>
+    <div class="post-summary">
+        {{ .context.Summary }}
+    </div>
+</article>

@@ -67,7 +67,6 @@
     position: absolute;
     right: var(--spacing-s);
     top: 50%;
-    transform: translateY(-50%);
 }
 
 .theme-switcher:hover {
@@ -157,7 +156,6 @@ body {
 .tags li a:hover {
     background-color: var(--accent-color);
     color: var(--text-color-light);
-    transform: none;
 }
 
 .tags li a.active {
@@ -179,21 +177,20 @@ body {
 }
 
 .post-item:hover {
-    /* transform: translateY(-2px); */
     box-shadow: 0 4px 16px var(--shadow-color);
 }
 
-.post-full h2, .post-item h3 {
+.post-full a h2, .post-item a h3 {
     margin-top: 0;
     margin-bottom: var(--spacing-xs-plus);
 }
 
-.post-full h2 a, .post-item h3 a {
-    text-decoration: underline;
+.post-full a, .post-item a {
+    text-decoration: none;
     color: var(--text-color-dark);
 }
 
-.post-full h2 a:hover, .post-item h3 a:hover {
+.post-full a:hover h2, .post-item a:hover h3 {
     color: var(--accent-color);
 }
 
@@ -363,21 +360,17 @@ body {
     margin-bottom: 1.2em;
 }
 
-.post-summary a {
+.post-summary a, .post-content a {
     color: var(--accent-color);
     text-decoration: none;
 }
 
-.post-summary a:hover {
+.post-summary a:hover, .post-content a:hover {
     text-decoration: underline;
 }
 
-body.light-theme .post-summary a {
+body.light-theme .post-summary a, body.light-theme .post-content a {
     color: var(--accent-color);
-}
-
-body.light-theme .post-summary a:hover {
-    text-decoration: underline;
 }
 
 .post-content code {
@@ -445,7 +438,6 @@ body.light-theme .post-summary a:hover {
 
 .nav-prev a:hover, .nav-next a:hover {
     border-color: var(--accent-color);
-    transform: translateY(-2px);
     box-shadow: 0 4px 12px var(--shadow-color);
 }
 
@@ -567,10 +559,6 @@ body.light-theme {
         color: var(--text-color-light);
     }
     
-    .post-full h2 a, .post-item h3 a {
-        color: var(--text-color-light);
-    }
-    
     .post-header {
         border-bottom-color: var(--border-color-light);
     }
@@ -622,11 +610,6 @@ body.light-theme {
     
     .list-header h1 {
         color: var(--text-color-light);
-    }
-
-    .site-header {
-        /* background-color: var(--secondary-bg-light); */
-        /* border-bottom-color: var(--border-color-light); */
     }
 
     .site-title {

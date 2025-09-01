@@ -1,17 +1,17 @@
 <div class="tags">
     <h3>Tags</h3>
-    <ul>
+    <div class="tags-container">
         {{ $currentTags := slice }}
         {{ if .Page.Params.tags }}
             {{ $currentTags = .Page.Params.tags }}
         {{ end }}
         {{ range .Site.Taxonomies.tags.ByCount }}
-            <li>
-                <a href="{{ .Page.Permalink }}" class="post-tag"
-                   {{ if in $currentTags .Page.Title }}class="active"{{ end }}>
-                    {{ .Page.Title }} <span class="tag-count">({{ .Count }})</span>
+            <div class="tag-items">
+                <a href="{{ .Page.Permalink }}" class="post-tag{{ if in $currentTags .Page.Title }} active{{ end }}">
+                    {{ .Page.Title }} 
+                    <!-- <span class="tag-count">({{ .Count }})</span> -->
                 </a>
-            </li> 
+            </div> 
         {{ end }}
-    </ul>
+    </div>
 </div>

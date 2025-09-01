@@ -67,3 +67,4 @@ Create clear visual hierarchy through:
 - Consider users with light sensitivity
 
 Remember: A good dark theme isn't just an inverted light theme - it requires thoughtful design and careful attention to detail.
+

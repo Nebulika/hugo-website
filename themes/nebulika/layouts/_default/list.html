@@ -11,24 +11,7 @@
 
     <div class="post-list">
         {{ range .Pages }}
-            <article class="post-item">
-                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-                <div class="post-meta">
-                    <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-                        {{ .Date.Format "January 2, 2006" }}
-                    </time>
-                    {{ if .Params.tags }}
-                        <div class="post-tags">
-                            {{ range .Params.tags }}
-                                <a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="post-tag">{{ . }}</a>
-                            {{ end }}
-                        </div>
-                    {{ end }}
-                </div>
-                <div class="post-summary">
-                    {{ .Summary }}
-                </div>
-            </article>
+            {{ partial "post_list_item.html" (dict "context" . "showDate" true "showTags" true) }}
         {{ end }}
     </div>
 {{ end }}
