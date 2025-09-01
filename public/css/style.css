@@ -68,7 +68,6 @@
     right: var(--spacing-s);
     top: 50%;
     transform: translateY(-50%);
-    transition: color 0.3s ease;
 }
 
 .theme-switcher:hover {
@@ -82,7 +81,6 @@ body {
     background-color: var(--bg-color-dark);
     color: var(--text-color-dark);
     line-height: 1.6;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container {
@@ -153,7 +151,6 @@ body {
     display: inline-block;
     margin: 0 var(--spacing-xxxs) var(--spacing-xxxs) 0;
     font-size: 0.8em;
-    transition: all 0.3s ease;
     border: 1px solid transparent;
 }
 
@@ -179,7 +176,6 @@ body {
     border-radius: var(--global-border-radius);
     margin-bottom: var(--spacing-s);
     box-shadow: 0 2px 8px var(--shadow-color);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .post-item:hover {
@@ -193,9 +189,8 @@ body {
 }
 
 .post-full h2 a, .post-item h3 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--text-color-dark);
-    transition: color 0.3s ease;
 }
 
 .post-full h2 a:hover, .post-item h3 a:hover {
@@ -244,7 +239,6 @@ body {
     background-color: var(--bg-color-dark);
     color: var(--text-color-dark);
     font-size: 14px;
-    transition: border-color 0.3s ease;
     box-sizing: border-box;
 }
 
@@ -295,7 +289,6 @@ body {
     text-decoration: none;
     border-radius: 4px;
     font-size: 0.85em;
-    transition: all 0.3s ease;
 }
 
 .social-links a:hover {
@@ -334,7 +327,6 @@ body {
     border-radius: 16px;
     font-size: 0.8em;
     margin: 0 6px 6px 0;
-    transition: all 0.3s ease;
 }
 
 .post-tag:hover {
@@ -374,7 +366,6 @@ body {
 .post-summary a {
     color: var(--accent-color);
     text-decoration: none;
-    transition: text-decoration 0.3s ease;
 }
 
 .post-summary a:hover {
@@ -449,7 +440,6 @@ body.light-theme .post-summary a:hover {
     padding: var(--spacing-s);
     background-color: var(--secondary-bg-dark);
     border-radius: 8px;
-    transition: all 0.3s ease;
     border: 1px solid var(--border-color-dark);
 }
 
