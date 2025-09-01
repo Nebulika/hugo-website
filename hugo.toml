@@ -1,0 +1,36 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Nebulika'
+theme = 'nebulika'
+
+[outputFormats.POSTS]
+    mediaType = "application/json"
+    baseName = "posts"
+    isPlainText = true
+    notAlternative = true
+
+[outputs]
+  home = ["HTML", "JSON"]
+  section = ["HTML", "POSTS"]
+
+[outputFormats]
+  [outputFormats.JSON]
+    mediaType = "application/json"
+    baseName = "index"
+    isPlainText = true
+    notAlternative = true
+
+[params]
+  author = "Sebastien G"
+  description = "Intune made easy!"
+  profile_picture = "author/sebg.jpg"  # Remove leading slash for assets processing
+  mainSections = ["posts"]
+  # logo = "path/to/your/logo.png" # Uncomment and set your logo path here
+
+  [[params.social]]
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/sebastien-guinard/"
+
+#  [[params.social]]
+#    name = "Twitter"
+#    url = "https://twitter.com/yourusername"

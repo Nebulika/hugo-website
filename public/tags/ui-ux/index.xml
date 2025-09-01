@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ui-Ux on Nebulika</title>
+    <link>http://localhost:1313/tags/ui-ux/</link>
+    <description>Recent content in Ui-Ux on Nebulika</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Jan 2025 09:15:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ui-ux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dark Theme Design Principles</title>
+      <link>http://localhost:1313/posts/dark-theme-design/</link>
+      <pubDate>Tue, 14 Jan 2025 09:15:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/dark-theme-design/</guid>
+      <description>&lt;h1 id=&#34;dark-theme-design-principles&#34;&gt;Dark Theme Design Principles&lt;/h1&gt;&#xA;&lt;p&gt;Dark themes have become increasingly popular in recent years. They&amp;rsquo;re not just trendy - when done right, they can reduce eye strain and save battery life on OLED displays.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-dark-themes-matter&#34;&gt;Why Dark Themes Matter&lt;/h2&gt;&#xA;&lt;h3 id=&#34;benefits&#34;&gt;Benefits&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Reduced Eye Strain&lt;/strong&gt;: Especially in low-light environments&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Battery Savings&lt;/strong&gt;: On OLED displays, dark pixels consume less power&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Focus&lt;/strong&gt;: Dark backgrounds help content stand out&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Accessibility&lt;/strong&gt;: Can be easier for users with certain visual conditions&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;challenges&#34;&gt;Challenges&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Contrast&lt;/strong&gt;: Maintaining proper contrast ratios&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Color Choice&lt;/strong&gt;: Ensuring colors work well on dark backgrounds&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Readability&lt;/strong&gt;: Text must remain crisp and clear&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;design-guidelines&#34;&gt;Design Guidelines&lt;/h2&gt;&#xA;&lt;h3 id=&#34;color-palette&#34;&gt;Color Palette&lt;/h3&gt;&#xA;&lt;p&gt;Choose your colors carefully:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

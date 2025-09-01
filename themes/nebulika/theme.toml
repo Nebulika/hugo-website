@@ -1,0 +1,12 @@
+name = "Nebulika"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "A simple blog theme"
+homepage = "http://example.com/"
+tags = ["blog", "dark", "light", "responsive"]
+features = ["some", "awesome", "features"]
+min_version = "0.41.0"
+
+[author]
+  name = "Your Name"
+  homepage = "yourwebsite.com"

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body>
+    <header class="site-header container">
+            <a class="site-title" href="{{ .Site.BaseURL }}">
+                {{ if .Site.Params.logo }}
+                    <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }} logo">
+                {{ else }}
+                    {{ .Site.Title }}
+                {{ end }}
+            </a>
+            <button id="theme-switcher" class="theme-switcher">🌙</button>
+    </header>
+    <div class="container">
+        <main class="main-content">
+            {{ block "main" . }}{{ end }}
+        </main>
+        <aside class="sidebar">
+            {{ partial "sidebar.html" . }}
+        </aside>
+    </div>
+    <footer>
+        {{ partial "footer.html" . }}
+    </footer>
+    <script src="{{ "js/theme-switcher.js" | relURL }}"></script>
+</body>
+</html>

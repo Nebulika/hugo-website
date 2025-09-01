@@ -1,0 +1,6 @@
+[
+    {{ range $index, $page := .Site.RegularPages }}
+        {{ if $index }},{{ end }}
+        "{{ .Title }}"
+    {{ end }}
+]

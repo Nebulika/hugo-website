@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Essential tips and tricks for working with Hugo static site generator">
+<meta name="author" content="Sebastien G">
+
+
+
+    <title>Hugo Tips and Tricks | Nebulika</title>
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/posts/hugo-tips-and-tricks/">
+<meta property="og:title" content="Hugo Tips and Tricks">
+<meta property="og:description" content="Essential tips and tricks for working with Hugo static site generator">
+
+
+<meta property="twitter:card" content="summary">
+<meta property="twitter:url" content="http://localhost:1313/posts/hugo-tips-and-tricks/">
+<meta property="twitter:title" content="Hugo Tips and Tricks">
+<meta property="twitter:description" content="Essential tips and tricks for working with Hugo static site generator">
+
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link rel="alternate" type="application/rss+xml" title="Nebulika" href="/index.xml">
+</head>
+<body>
+    <header class="site-header container">
+            <a class="site-title" href="http://localhost:1313/">
+                
+                    Nebulika
+                
+            </a>
+    </header>
+    <div class="container">
+        <main class="main-content">
+            
+    <article class="post-full single-post">
+        <header class="post-header">
+            <h1>Hugo Tips and Tricks</h1>
+            <div class="post-meta">
+                <time datetime="2025-01-15T14:30:00Z">
+                    January 15, 2025
+                </time>
+                
+                    <div class="post-tags">
+                        
+                            <a href="/tags/hugo" class="post-tag">hugo</a>
+                        
+                            <a href="/tags/web-development" class="post-tag">web-development</a>
+                        
+                            <a href="/tags/static-sites" class="post-tag">static-sites</a>
+                        
+                    </div>
+                
+            </div>
+        </header>
+        <div class="post-content">
+            <h1 id="hugo-tips-and-tricks">Hugo Tips and Tricks</h1>
+<p>Hugo is a powerful static site generator that can help you build fast, secure websites. Here are some essential tips and tricks to get the most out of Hugo.</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>When starting with Hugo, remember these key concepts:</p>
+<ol>
+<li><strong>Content Organization</strong>: Keep your content well-organized in the <code>content/</code> directory</li>
+<li><strong>Front Matter</strong>: Use YAML, TOML, or JSON for page metadata</li>
+<li><strong>Layouts</strong>: Create reusable templates in the <code>layouts/</code> directory</li>
+</ol>
+<h2 id="advanced-features">Advanced Features</h2>
+<h3 id="image-processing">Image Processing</h3>
+<p>Hugo has built-in image processing capabilities:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">image</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">resources</span>.<span style="color:#a6e22e">Get</span> <span style="color:#e6db74">&#34;images/example.jpg&#34;</span> }}
+</span></span><span style="display:flex;"><span>{{ <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">resized</span> <span style="color:#f92672">:=</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#a6e22e">image</span>.<span style="color:#a6e22e">Resize</span> <span style="color:#e6db74">&#34;800x600&#34;</span> }}
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#a6e22e">img</span> <span style="color:#a6e22e">src</span>=<span style="color:#e6db74">&#34;{{ $resized.RelPermalink }}&#34;</span> <span style="color:#a6e22e">alt</span>=<span style="color:#e6db74">&#34;Example&#34;</span>&gt;
+</span></span></code></pre></div><h3 id="shortcodes">Shortcodes</h3>
+<p>Create reusable content snippets:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+</span></span></code></pre></div><h2 id="performance-tips">Performance Tips</h2>
+<ul>
+<li>Use Hugo&rsquo;s built-in minification</li>
+<li>Optimize images with Hugo Pipes</li>
+<li>Enable caching for better build times</li>
+</ul>
+<blockquote>
+<p><strong>Pro Tip</strong>: Always test your site locally before deploying!</p></blockquote>
+<h2 id="conclusion">Conclusion</h2>
+<p>Hugo is an excellent choice for static sites. With these tips, you&rsquo;ll be building amazing websites in no time.</p>
+
+        </div>
+        
+            <nav class="post-navigation">
+                
+                    <div class="nav-prev">
+                        <a href="http://localhost:1313/posts/dark-theme-design/" rel="prev">
+                            <span class="nav-label">← Previous</span>
+                            <span class="nav-title">Dark Theme Design Principles</span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="nav-next">
+                        <a href="http://localhost:1313/posts/endpoint-security-monitoring/" rel="next">
+                            <span class="nav-label">Next →</span>
+                            <span class="nav-title">Endpoint Security Monitoring with Microsoft Defender</span>
+                        </a>
+                    </div>
+                
+            </nav>
+        
+    </article>
+
+        </main>
+        <aside class="sidebar">
+            <div class="search">
+    <h3>Search</h3>
+    <input type="text" id="search-input" placeholder="Search...">
+    <ul id="search-results"></ul>
+</div>
+<div class="author-details">
+    
+        
+        
+            
+            <img src="/author/sebg_hu_982925b01ae96516.jpg" alt="Sebastien G" loading="lazy">
+        
+    
+    <h3>Sebastien G</h3>
+    <p>Intune made easy!</p>
+    
+        <div class="social-links">
+            
+                <a href="https://www.linkedin.com/in/sebastien-guinard/" target="_blank" rel="noopener">LinkedIn</a>
+            
+        </div>
+    
+</div>
+<div class="tags">
+    <h3>Tags</h3>
+    <ul>
+        
+        
+            
+        
+        
+            <li>
+                <a href="http://localhost:1313/tags/office-365/" 
+                   >
+                    Office 365 <span class="tag-count">(4)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/security/" 
+                   >
+                    Security <span class="tag-count">(4)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/automation/" 
+                   >
+                    Automation <span class="tag-count">(3)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/intune/" 
+                   >
+                    Intune <span class="tag-count">(3)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/powershell/" 
+                   >
+                    PowerShell <span class="tag-count">(3)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/azure-ad/" 
+                   >
+                    Azure AD <span class="tag-count">(2)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/collaboration/" 
+                   >
+                    Collaboration <span class="tag-count">(2)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/device-management/" 
+                   >
+                    Device Management <span class="tag-count">(2)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/o365/" 
+                   >
+                    O365 <span class="tag-count">(2)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/scripting/" 
+                   >
+                    Scripting <span class="tag-count">(2)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/administration/" 
+                   >
+                    Administration <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/advanced/" 
+                   >
+                    Advanced <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/compliance/" 
+                   >
+                    Compliance <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/conditional-access/" 
+                   >
+                    Conditional Access <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/configuration/" 
+                   >
+                    Configuration <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/dark-theme/" 
+                   >
+                    Dark-Theme <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/deployment/" 
+                   >
+                    Deployment <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/design/" 
+                   >
+                    Design <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/document-management/" 
+                   >
+                    Document Management <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/endpoint-management/" 
+                   >
+                    Endpoint Management <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/endpoint-protection/" 
+                   >
+                    Endpoint Protection <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/exchange-online/" 
+                   >
+                    Exchange Online <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/hugo/" 
+                   >
+                    Hugo <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/identity/" 
+                   >
+                    Identity <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/identity-management/" 
+                   >
+                    Identity Management <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/microsoft-365/" 
+                   >
+                    Microsoft 365 <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/microsoft-defender/" 
+                   >
+                    Microsoft Defender <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/microsoft-teams/" 
+                   >
+                    Microsoft Teams <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/migration/" 
+                   >
+                    Migration <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/monitoring/" 
+                   >
+                    Monitoring <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/planning/" 
+                   >
+                    Planning <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/sharepoint-online/" 
+                   >
+                    SharePoint Online <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/static-sites/" 
+                   >
+                    Static-Sites <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/ui-ux/" 
+                   >
+                    Ui-Ux <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/web-development/" 
+                   >
+                    Web-Development <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/windows/" 
+                   >
+                    Windows <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+            <li>
+                <a href="http://localhost:1313/tags/windows-autopilot/" 
+                   >
+                    Windows Autopilot <span class="tag-count">(1)</span>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+        </aside>
+    </div>
+    <footer class="container">
+        <p>&copy; 2025 Nebulika</p>
+<script src="/js/script.js"></script>
+    </footer>
+</body>
+</html>

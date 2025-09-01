@@ -1,0 +1,30 @@
+{{ define "main" }}
+    {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+    {{ $latest := first 1 $pages }}
+    {{ range $latest }}
+        <article class="post-full">
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <div class="post-meta">
+                <span>{{ .Date.Format "January 2, 2006" }}</span>
+            </div>
+            <div class="post-content">
+                {{ .Content }}
+            </div>
+        </article>
+    {{ end }}
+
+    <div class="post-list">
+        {{ $other_posts := after 1 $pages }}
+        {{ range $other_posts }}
+            <article class="post-item">
+                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <div class="post-meta">
+                    <span>{{ .Date.Format "January 2, 2006" }}</span>
+                </div>
+                <div class="post-summary">
+                    {{ .Summary }}
+                </div>
+            </article>
+        {{ end }}
+    </div>
+{{ end }}
