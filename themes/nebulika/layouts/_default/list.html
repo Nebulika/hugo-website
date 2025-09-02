@@ -1,17 +1,17 @@
 {{ define "main" }}
-    <div class="list-header">
-        <h1>{{ .Title }}</h1>
-        {{ if .Description }}
-            <p class="list-description">{{ .Description }}</p>
-        {{ end }}
-        {{ if eq .Section "tags" }}
+    <!-- <div class="list-header"> -->
+        <!-- <h1>{{ .Title }}</h1> -->
+        <!-- {{ if .Description }} -->
+            <!-- <p class="list-description">{{ .Description }}</p> -->
+        <!-- {{ end }} -->
+        <!-- {{ if eq .Section "tags" }} -->
             <!-- <p class="tag-count">{{ len .Pages }} {{ if eq (len .Pages) 1 }}post{{ else }}posts{{ end }}</p> -->
-        {{ end }}
-    </div>
+        <!-- {{ end }} -->
+    <!-- </div> -->
 
     <div class="post-list">
         {{ range .Pages }}
-            {{ partial "post_list_item.html" (dict "context" . "showDate" true "showTags" true) }}
+            {{ partial "post_list_item.html" (dict "context" . "showDate" true "showTags" false) }}
         {{ end }}
     </div>
 {{ end }}

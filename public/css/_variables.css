@@ -1,0 +1,53 @@
+/* ========================================= */
+/* Dark Theme                */
+/* ========================================= */
+body.dark-theme {
+    --color-background: #1a1a1a;
+    --color-background-secondary: #2d2d2d;
+    --color-background-tag: #404040;
+    --color-accent: #6366f1;
+    
+    --color-text-primary: #e0e0e0;
+    --color-text-secondary: #888;
+
+    --color-border: #404040;
+    --color-shadow: rgba(0, 0, 0, 0.25);
+}
+
+/* ========================================= */
+/* Light Theme                */
+/* ========================================= */
+body.light-theme {
+    --color-background: #ffffff;
+    --color-background-secondary: #f8f9fa;
+    --color-background-tag: #e5e5e5;
+    --color-accent: #6366f1;
+    
+    --color-text-primary: #333333;
+    --color-text-secondary: #888;
+    
+    --color-border: #e5e5e5;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+}
+
+:root {
+    /* ========================================= */
+    /* Non-Thematic Variables           */
+    /* These variables are consistent across all themes. */
+    /* ========================================= */
+    
+    /* Layout */
+    --global-border-radius: 8px;
+
+    /* Spacing */
+    --spacing-xxxs: 6px;
+    --spacing-xxs: 4px;
+    --spacing-xxs-plus: 10px;
+    --spacing-xs: 8px;
+    --spacing-xs-plus: 12px;
+    --spacing-s: 16px;
+    --spacing-m: 20px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 48px;
+}

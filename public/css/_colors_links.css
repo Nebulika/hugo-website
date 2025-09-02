@@ -1,0 +1,293 @@
+body {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+.site-title {
+    color: var(--text-color-dark);
+}
+
+.site-title:hover {
+    color: var(--accent-color);
+}
+
+.theme-switcher {
+    color: var(--text-color-dark);
+}
+
+.theme-switcher:hover {
+    color: var(--accent-color);
+}
+
+.tags li a {
+    color: var(--text-color-dark);
+    background-color: var(--tag-bg-dark);
+    border: 1px solid transparent;
+}
+
+.tags li a:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color-light);
+}
+
+.tags li a.active {
+    background-color: var(--accent-color);
+    color: var(--text-color-light);
+    border-color: var(--accent-color);
+}
+
+.post-full a, .post-item a {
+    color: var(--text-color-dark);
+}
+
+.post-full a:hover h2, .post-item a:hover h3 {
+    color: var(--accent-color);
+}
+
+.author-details img {
+    border: 3px solid var(--accent-color);
+}
+
+.author-details p {
+    color: var(--text-color-secondary);
+}
+
+.search input {
+    border: 1px solid var(--border-color-dark);
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+.search input:focus {
+    border-color: var(--accent-color);
+}
+
+#search-results li {
+    border-bottom: 1px solid var(--border-color-dark);
+}
+
+#search-results a {
+    color: var(--text-color-dark);
+}
+
+#search-results a:hover, #search-results a.selected {
+    color: var(--accent-color);
+    background-color: var(--tag-bg-dark);
+}
+
+.social-links a {
+    background-color: var(--tag-bg-dark);
+    color: var(--text-color-dark);
+}
+
+.social-links a:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color-light);
+}
+
+.tag-count {
+    opacity: 0.7;
+}
+
+.post-tag {
+    background-color: var(--tag-bg-dark);
+    color: var(--text-color-dark);
+}
+
+.post-tag:hover, .post-tag.active {
+    background-color: var(--accent-color);
+    color: var(--text-color-light);
+}
+
+.post-content h2, .post-content h3, .post-content h4 {
+    color: var(--text-color-dark);
+}
+
+.post-content h2 {
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.post-summary a, .post-content a {
+    color: var(--accent-color);
+}
+
+.post-summary a:hover, .post-content a:hover {
+    text-decoration: underline;
+}
+
+body.light-theme .post-summary a, body.light-theme .post-content a {
+    color: var(--accent-color);
+}
+
+.post-content code {
+    background-color: var(--secondary-bg-dark);
+}
+
+.post-content pre {
+    background-color: var(--secondary-bg-dark);
+}
+
+.post-content blockquote {
+    border-left: 4px solid var(--accent-color);
+    background-color: var(--secondary-bg-dark);
+}
+
+.post-navigation {
+    border-top: 1px solid var(--border-color-dark);
+}
+
+.nav-prev a, .nav-next a {
+    color: var(--text-color-dark);
+    background-color: var(--secondary-bg-dark);
+    border: 1px solid var(--border-color-dark);
+}
+
+.nav-prev a:hover, .nav-next a:hover {
+    border-color: var(--accent-color);
+}
+
+.nav-label {
+    color: var(--accent-color);
+}
+
+.list-header h1 {
+    color: var(--text-color-dark);
+}
+
+.list-description {
+    color: var(--text-color-secondary);
+}
+
+.list-header .tag-count {
+    color: var(--accent-color);
+}
+
+body.light-theme {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+}
+
+body.light-theme .sidebar {
+    background-color: transparent;
+}
+
+body.light-theme .post-full, body.light-theme .post-item {
+    background-color: var(--secondary-bg-light);
+}
+
+body.light-theme .tags li a {
+    color: var(--text-color-light);
+    background-color: var(--tag-bg-light);
+}
+
+body.light-theme .tags li a.active, body.light-theme .tags li a:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color-light);
+}
+
+body.light-theme .tags li a.active {
+    border-color: var(--accent-color);
+}
+
+body.light-theme .author-details {
+    background-color: var(--secondary-bg-light);
+}
+
+body.light-theme .tags {
+    background-color: var(--secondary-bg-light);
+}
+
+body.light-theme .search {
+    background-color: var(--secondary-bg-light);
+}
+
+body.light-theme .search input {
+    border-color: var(--border-color-light);
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+}
+
+body.light-theme .search input:focus {
+    border-color: var(--accent-color);
+}
+
+body.light-theme #search-results li {
+    border-bottom-color: var(--border-color-light);
+}
+
+body.light-theme #search-results a {
+    color: var(--text-color-light);
+}
+
+body.light-theme .post-header {
+    border-bottom-color: var(--border-color-light);
+}
+
+body.light-theme .post-tag {
+    background-color: var(--tag-bg-light);
+    color: var(--text-color-light);
+}
+
+body.light-theme .post-tag:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color-light);
+}
+
+body.light-theme .post-content h2, body.light-theme .post-content h3, body.light-theme .post-content h4 {
+    color: var(--text-color-light);
+}
+
+body.light-theme .post-content code {
+    background-color: var(--secondary-bg-light);
+}
+
+body.light-theme .post-content pre {
+    background-color: var(--secondary-bg-light);
+}
+
+body.light-theme .post-content blockquote {
+    background-color: var(--secondary-bg-light);
+}
+
+body.light-theme .post-navigation {
+    border-top-color: var(--border-color-light);
+}
+
+body.light-theme .nav-prev a, body.light-theme .nav-next a {
+    background-color: var(--secondary-bg-light);
+    color: var(--text-color-light);
+    border-color: var(--border-color-light);
+}
+
+body.light-theme .social-links a {
+    background-color: var(--tag-bg-light);
+    color: var(--text-color-light);
+}
+
+body.light-theme #search-results a.selected {
+    background-color: var(--tag-bg-light);
+}
+
+body.light-theme .list-header h1 {
+    color: var(--text-color-light);
+}
+
+body.light-theme .site-title {
+    color: var(--text-color-light);
+}
+
+body.light-theme .theme-switcher {
+    color: var(--text-color-light);
+}
+
+@media (max-width: 768px) {
+    body.light-theme .sidebar {
+        border-top-color: var(--border-color-light);
+    }
+}
+
+#search-results-box {
+    background-color: var(--secondary-bg-dark);
+    border: 1px solid var(--border-color-dark);
+    box-shadow: 0 4px 12px var(--shadow-color);
+}

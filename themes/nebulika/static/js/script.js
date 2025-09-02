@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.getElementById('search-input');
     const searchResults = document.getElementById('search-results');
+    const searchResultsBox = document.getElementById('search-results-box'); // New: Get reference to the results box
+    const searchOverlay = document.getElementById('search-overlay'); // New: Get reference to the overlay
     let searchIndex = [];
     let isLoading = true;
 
@@ -41,8 +43,11 @@ document.addEventListener("DOMContentLoaded", function() {
         searchResults.innerHTML = '';
 
         if (query.length < 2) {
+            searchResultsBox.classList.remove('active'); // Hide results box
             return;
         }
+
+        searchResultsBox.classList.add('active'); // Show results box
 
         if (isLoading) {
             const li = document.createElement('li');
@@ -108,8 +113,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Clear search when clicking outside
     document.addEventListener('click', function(event) {
-        if (!searchInput.contains(event.target) && !searchResults.contains(event.target)) {
-            searchResults.innerHTML = '';
+        if (!searchOverlay.contains(event.target)) { // Check if click is outside the overlay
+            searchResultsBox.classList.remove('active'); // Hide results box
+            searchInput.value = ''; // Clear input
+            searchResults.innerHTML = ''; // Clear results
         }
     });
 
@@ -134,7 +141,9 @@ document.addEventListener("DOMContentLoaded", function() {
             event.preventDefault();
             items[currentIndex].click();
         } else if (event.key === 'Escape') {
-            searchResults.innerHTML = '';
+            searchResultsBox.classList.remove('active'); // Hide results box
+            searchInput.value = ''; // Clear input
+            searchResults.innerHTML = ''; // Clear results
             searchInput.blur();
         }
     });

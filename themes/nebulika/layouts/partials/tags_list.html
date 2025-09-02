@@ -1,17 +1,21 @@
 <div class="tags">
     <h3>Tags</h3>
     <div class="tags-container">
-        {{ $currentTags := slice }}
-        {{ if .Page.Params.tags }}
-            {{ $currentTags = .Page.Params.tags }}
+        {{ $pageTags := slice }}
+        {{ if eq .Kind "page" }} 
+            {{/* For posts */}}
+            {{ $pageTags = .Params.tags }}
+        {{ else if eq .Kind "term" }}
+            {{/* For Term IE Tags pages */}}
+            {{ $pageTags = slice .Title }}
         {{ end }}
-        {{ range .Site.Taxonomies.tags.ByCount }}
-            <div class="tag-items">
-                <a href="{{ .Page.Permalink }}" class="post-tag{{ if in $currentTags .Page.Title }} active{{ end }}">
-                    {{ .Page.Title }} 
-                    <!-- <span class="tag-count">({{ .Count }})</span> -->
+
+        <div class="post-tags">
+            {{ range .Site.Taxonomies.tags.ByCount }}
+                <a href="{{ .Page.Permalink }}" class="post-tag{{ if in $pageTags .Page.Title }} active{{ end }}">
+                    {{ .Page.Title }}
                 </a>
-            </div> 
-        {{ end }}
+            {{ end }}
+        </div>
     </div>
 </div>
