@@ -5,14 +5,21 @@
 </head>
 <body>
     <header class="site-header container">
-            <a class="site-title" href="{{ .Site.BaseURL }}">
-                {{ if .Site.Params.logo }}
-                    <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }} logo">
-                {{ else }}
-                    {{ .Site.Title }}
-                {{ end }}
-            </a>
-            <button id="theme-switcher" class="theme-switcher">🌙</button>
+        <a class="site-title" href="{{ .Site.BaseURL }}">
+            {{ if .Site.Params.logo }}
+                <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }} logo">
+            {{ else }}
+                {{ .Site.Title }}
+            {{ end }}
+        </a>
+        <!-- Toggle button -->
+        <div id="theme-switcher" class="theme-switcher">
+            <span class="icon moon">🌙</span>
+            <span class="switch">
+                <span class="thumb"></span>
+            </span>
+            <span class="icon sun">☀️</span>
+        </div>
     </header>
     <div class="container">
         <main class="main-content">

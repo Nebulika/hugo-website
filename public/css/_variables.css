@@ -38,6 +38,7 @@ body.light-theme {
     
     /* Layout */
     --global-border-radius: 8px;
+    --tag-border-radius: 4px;
 
     /* Spacing */
     --spacing-xxxs: 6px;

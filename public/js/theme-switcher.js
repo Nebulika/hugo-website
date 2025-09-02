@@ -7,19 +7,20 @@ document.addEventListener('DOMContentLoaded', () => {
         if (theme === 'dark') {
             body.classList.remove('light-theme');
             body.classList.add('dark-theme');
-            themeSwitcher.textContent = '☀️';
+            themeSwitcher.classList.remove('light');
             localStorage.setItem('theme', 'dark');
         } else {
             body.classList.remove('dark-theme');
             body.classList.add('light-theme');
-            themeSwitcher.textContent = '🌙';
+            themeSwitcher.classList.add('light');
             localStorage.setItem('theme', 'light');
         }
     };
 
     // Check for saved theme or system preference on page load
     const savedTheme = localStorage.getItem('theme');
-    const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+    const prefersLight = window.matchMedia &&
+                         window.matchMedia('(prefers-color-scheme: light)').matches;
 
     if (savedTheme) {
         setTheme(savedTheme);

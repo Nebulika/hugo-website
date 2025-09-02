@@ -3,7 +3,6 @@ title: "Advanced O365 Administration Techniques"
 date: 2025-08-28
 draft: false
 tags: ["O365", "Office 365", "PowerShell", "Automation"]
-categories: ["O365"]
 ---
 
 This post focuses on some more advanced administrative tasks within Office 365. We will look at leveraging PowerShell scripts to automate user provisioning and license management, saving you valuable time.

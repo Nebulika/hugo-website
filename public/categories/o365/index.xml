@@ -6,15 +6,8 @@
     <description>Recent content in O365 on Nebulika</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/o365/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Advanced O365 Administration Techniques</title>
-      <link>http://localhost:1313/posts/second-post/</link>
-      <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/second-post/</guid>
-      <description>&lt;p&gt;This post focuses on some more advanced administrative tasks within Office 365. We will look at leveraging PowerShell scripts to automate user provisioning and license management, saving you valuable time.&lt;/p&gt;&#xA;&lt;p&gt;PowerShell provides an incredible amount of control over your O365 environment, allowing for bulk operations and detailed reporting that aren&amp;rsquo;t available through the standard graphical interface.&lt;/p&gt;&#xA;&lt;p&gt;This is a great follow-up to my previous post, where I discussed &lt;a href=&#34;http://localhost:1313/posts/first-post/&#34;&gt;Getting Started with Intune&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Complete Guide to Office 365 Migration Planning</title>
       <link>http://localhost:1313/posts/office-365-migration-guide/</link>

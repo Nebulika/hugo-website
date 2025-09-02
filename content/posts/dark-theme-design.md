@@ -2,7 +2,7 @@
 title: "Dark Theme Design Principles"
 date: 2025-01-14T09:15:00Z
 draft: false
-tags: ["design", "ui-ux", "dark-theme"]
+tags: ["Design", "ui-ux", "Dark-Theme"]
 description: "Best practices for creating beautiful and accessible dark themes"
 ---
 

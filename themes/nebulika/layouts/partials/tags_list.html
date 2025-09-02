@@ -9,7 +9,7 @@
             {{/* For Term IE Tags pages */}}
             {{ $pageTags = slice .Title }}
         {{ end }}
-
+    
         <div class="post-tags">
             {{ range .Site.Taxonomies.tags.ByCount }}
                 <a href="{{ .Page.Permalink }}" class="post-tag{{ if in $pageTags .Page.Title }} active{{ end }}">
