@@ -1,7 +1,8 @@
 .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: var(--spacing-m) var(--spacing-xxl);
-    text-align: left;
-    position: relative;
 }
 
 .site-title {

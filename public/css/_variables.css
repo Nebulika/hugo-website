@@ -19,14 +19,14 @@ body.dark-theme {
 /* ========================================= */
 body.light-theme {
     --color-background: #ffffff;
-    --color-background-secondary: #f8f9fa;
+    --color-background-secondary: #f3f3f3;
     --color-background-tag: #e5e5e5;
     --color-accent: #6366f1;
     
     --color-text-primary: #333333;
     --color-text-secondary: #888;
     
-    --color-border: #e5e5e5;
+    --color-border: #e2e2e2;
     --color-shadow: rgba(0, 0, 0, 0.1);
 }
 
@@ -38,7 +38,7 @@ body.light-theme {
     
     /* Layout */
     --global-border-radius: 8px;
-    --tag-border-radius: 4px;
+    --tag-border-radius: 5px;
 
     /* Spacing */
     --spacing-xxxs: 6px;
