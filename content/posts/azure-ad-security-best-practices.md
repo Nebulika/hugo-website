@@ -4,7 +4,7 @@ draft: false
 date: 2025-08-26
 tags: ["Azure AD", "Security", "Identity Management", "Microsoft 365"]
 categories: ["Security"]
-summary: "Essential security practices to protect your organization's identity infrastructure"
+summary: "Essential security practices to protect your organization's identity infrastructure."
 ---
 
 Identity is the new perimeter in modern cybersecurity. Azure Active Directory serves as the foundation for identity and access management in Microsoft 365 environments, making it crucial to implement robust security measures.
