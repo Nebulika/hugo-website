@@ -16,14 +16,8 @@
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary">
-<meta property="twitter:url" content="{{ .Permalink }}">
-<meta property="twitter:title" content="{{ $title }}">
-<meta property="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-
 <!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/x-icon" size="32x32" href="/favicon32.png">
 
 <!-- Stylesheets -->
 <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
